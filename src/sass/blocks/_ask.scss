@@ -1,0 +1,64 @@
+.ask {
+    padding-bottom: 112px;
+    border-bottom: 1px solid rgba(229, 230, 229, 0.44);
+    &__title {
+        color: $title-color;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 58px;
+        text-align: center;
+    }
+    &__subtitle {
+        width: 635px;
+        margin: 32px auto 0 auto;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    &__slogan {
+        color: $title-color;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 58px;
+        text-align: left;
+    }
+    &__desc {
+        width: 810px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    &__item {
+        position: relative;
+        width: 870px;
+        min-height: 26px;
+        padding: 23px 38px 18px 49px;
+        background-color: #f5f7fa;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__plus {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__minus {
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+}

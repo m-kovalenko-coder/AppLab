@@ -1,0 +1,47 @@
+.feature {
+    padding: 202px 0 100px 0;
+    &__picture {
+        display: block;
+        position: absolute;
+        top: -45px;
+        left: -200px;
+        z-index: -1;
+    }
+    &__info {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    &__title {
+        max-width: 432px;
+        color: $title-color;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46px;
+        text-align: left;
+    }
+    &__subtitle {
+        margin-top: 14px;
+        max-width: 432px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    &__wrapper {
+        margin-top: 82px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    &__item {
+        width: 380px;
+        display: grid;
+        grid-template-columns: 88px 262px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

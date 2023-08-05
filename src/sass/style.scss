@@ -1,0 +1,36 @@
+@import 'libs/normalize';
+@import 'libs/slick';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    position: relative;
+    margin: 0 auto;
+}
+
+@import 'blocks/menu';
+@import 'blocks/button';
+@import 'blocks/title';
+@import 'blocks/circle';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/trusted';
+@import 'blocks/feature';
+@import 'blocks/smart';
+@import 'blocks/design';
+@import 'blocks/choose';
+@import 'blocks/ultimate';
+@import 'blocks/awesome';
+@import 'blocks/people';
+@import 'blocks/ask';
+@import 'blocks/download';
+@import 'blocks/footer';
+@import 'blocks/media';

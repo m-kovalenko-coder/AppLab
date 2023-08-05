@@ -1,0 +1,40 @@
+.design {
+    padding: 257px 0 152px 0;
+    border-bottom: 1px solid rgba(229, 230, 229, 0.44);
+    &__picture {
+        position: absolute;
+        display: block;
+        top: -40%;
+        left: -5%;
+        z-index: -1;
+    }
+    &__info {
+        width: 1070px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    &__title {
+        width: 350px;
+        color: $title-color;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46px;
+        text-align: left;
+    }
+    &__desc {
+        width: 406px;
+        margin-top: 29px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    &__btn {
+        margin-top: 42px;
+        width: 170px;
+        height: 57px;
+    }
+}

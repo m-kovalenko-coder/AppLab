@@ -1,0 +1,96 @@
+.footer {
+    padding-top: 105px;
+    padding-bottom: 128px;
+    background-color: #09142e;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    &__picture {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-6%);
+    }
+    &__name {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 44px;
+        text-decoration: none;
+        text-align: center;
+        transition: .5s all;
+        &:hover {
+            color: $blue-color;
+        }
+        span {
+            color: #fcae61;
+        }
+    }
+    &__list {
+        margin-top: 34px;
+        display: flex;
+        list-style-type: none;
+        column-gap: 36px;
+        align-items: center;
+    }
+    &__link {
+        position: relative;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 44px;
+        text-decoration: none;
+        transition: .5s all;
+        &:hover {
+            color: $blue-color;
+            &::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 4px;
+            background-color: $blue-color;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s ease-in-out;
+        }
+    }
+    &__social {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__reference {
+        text-decoration: none;
+        &:hover {
+            path {
+                fill: #fff;
+            }
+        }
+        path {
+            fill: #273043;
+            transition: .5s all;
+        }
+    }
+    &__copy {
+        margin-top: 72px;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: center;
+    }
+}

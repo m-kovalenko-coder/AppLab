@@ -1,0 +1,125 @@
+.people {
+    padding-top: 153px;
+    padding-bottom: 209px;
+    position: relative;
+    &__picture {
+        position: absolute;
+        top: -45px;
+        left: -235px;
+        z-index: -1;
+    }
+    &__info {
+        padding-right: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    &__title {
+        width: 485px;
+        color: $title-color;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: left;
+    }
+    &__subtitle {
+        margin-top: 24px;
+        width: 480px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    &__slider {
+        width: 570px;
+        margin-top: 36px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
+    .item-stars {
+        display: flex;
+        column-gap: 8px;
+    }
+    .item-slogan {
+        margin-top: 10px;
+        color: $title-color;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 58px;
+        text-align: left;
+    }
+    .item-descr {
+        margin-top: 8px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    .item-user {
+        margin-top: 58px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .item-name {
+        color: $title-color;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .item-job {
+        margin-top: 8px;
+        color: $text-color;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+    }
+    .slick-prev,.slick-next{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #eff3f8;
+        border-radius: 100%;
+        background: none;
+        outline: none;
+        position: absolute;
+        top: 84%;
+        z-index: 5;
+        cursor: pointer;
+        transition: .5s all;
+        &:hover {
+            background-color: #eff3f8;
+            svg {
+                path {
+                    transition: .5s all;
+                    fill: #3d6deb;
+                }
+            }
+        }
+    }
+    .slick-prev {
+        left: calc(83%);
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: -12px;
+            width: 1px;
+            height: 25px;
+            background-color: #e7e7e7;
+        }
+    }
+    .slick-next{
+        left: calc(95%);
+        transform: rotateY(180deg);
+    }
+    .slick-slide {
+        outline: none;
+    }
+}
