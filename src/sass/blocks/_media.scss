@@ -342,6 +342,11 @@
             text-align: center;
         }
     }
+    .modal {
+        &__content {
+            width: 80%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -480,6 +485,13 @@
         }
         &__copy {
             margin-top: 20px;
+        }
+    }
+    .modal {
+        &__content {
+            top: 10%;
+            width: 90%;
+            padding: 30px 10px;
         }
     }
 }

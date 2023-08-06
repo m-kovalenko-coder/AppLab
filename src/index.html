@@ -39,7 +39,7 @@
                         <li><a href="#testiminial" class="header__link">Testiminial</a></li>
                         <li><a href="#faq" class="header__link">FAQ</a></li>
                     </ul>
-                    <button class="header__btn button">Try for free</button>
+                    <button id="button" class="header__btn button">Try for free</button>
                 </nav>
                 <div class="hamburger">
                     <span></span>
@@ -61,7 +61,7 @@
                     <h1 class="header__title">Best app for your modern lifestyle</h1>
                     <p class="header__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
                     <div class="header__buttons">
-                        <button class="header__btn-info button">Try for free</button>
+                        <button id="button-s" class="header__btn-info button">Try for free</button>
                         <a class="header__btn-link" href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Watch demo video</a>
                     </div>
                 </div>
@@ -281,7 +281,7 @@
                                 <li class="block-item">Blog Support Tools</li>
                                 <li class="block-item">eCommerce Store</li>
                             </ul>
-                            <button class="button block-btn">Start free trail</button>
+                            <button  class="button block-btn">Start free trail</button>
                         </div>
                         <div class="awesome__pro">
                             <div class="block-head">
@@ -295,7 +295,7 @@
                                 <li class="block-item">Blog Support Tools</li>
                                 <li class="block-item">eCommerce Store</li>
                             </ul>
-                            <button class="button block-btn">Subscribe Now</button>
+                            <button  class="button block-btn">Subscribe Now</button>
                             <a href="#" class="block-link">Or Start 14 days trail</a>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                                 <li class="block-item">Blog Support Tools</li>
                                 <li class="block-item">eCommerce Store</li>
                             </ul>
-                            <button class="button block-btn">Subscribe Now</button>
+                            <button  class="button block-btn">Subscribe Now</button>
                         </div>
                         <div class="awesome__pro">
                             <div class="block-head">
@@ -326,7 +326,7 @@
                                 <li class="block-item">Blog Support Tools</li>
                                 <li class="block-item">eCommerce Store</li>
                             </ul>
-                            <button class="button block-btn">Subscribe Now</button>
+                            <button  class="button block-btn">Subscribe Now</button>
                             <a href="#" class="block-link">Or Start 14 days trail</a>
                         </div>
                     </div>
@@ -565,7 +565,20 @@
         </div>
         <div class="footer__copy">Copyright© Arifur Rahman Tushar 2019. All rights reserved</div>
     </footer>
-    
+    <div id="modal" class="modal">
+        <div class="modal__content" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="modal__form" action="#">
+                <input name="name" required minlength="3" placeholder="Your name" type="text">
+                <input name="phone" required placeholder="Your phone">
+                <input name="email" required placeholder="Your E-mail" type="email">
+                <button class="modal__button button">Call me back!</button>
+            </form>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
